@@ -17,6 +17,7 @@ typedef struct Node {
     int result;
 } Node;
 
+//function prototype
 Node *makeFunc(TypeTag type, int left, int right);
 int calc(Node *node);
 
@@ -33,6 +34,7 @@ int main() {
     Node *fibo = makeFunc(FIBO, sub->result, 0);
     calc(fibo);
 
+    //freeing memory
     free(add);
     free(mul);
     free(sub);

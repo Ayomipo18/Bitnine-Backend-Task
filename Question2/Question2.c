@@ -31,10 +31,19 @@ int main() {
 }
 
 /*
-This method makes use of a recursive approach, which improves the readability and comprehension of the code. 
+This approach uses recursive calls to solve the problem.
 
-However, particularly for large values of n, it might not be the most effective approach to solving the issue. 
-Each time a recursive call is made, a new stack frame is created, which can quickly consume memory and cause the program to run slowly.
+Advantages:
+Readability: Recursive solutions often closely resemble the problem's formulation, 
+making the code more intuitive and easier to understand.
+
+Disadvantages:
+Inefficiency: For large values of n, recursive calls can create a large number of stack frames, 
+consuming memory and potentially causing the program to run slowly.
+
+Time Complexity: O(2^n)
+Space Complexity: O(n)
+where n is the input value of the function
 */
 int recursion(int n) {
     if(n == 0) return 0;
@@ -46,13 +55,19 @@ int recursion(int n) {
 }
 
 /*
-This method uses an iterative approach to solve the problem. 
-It is more efficient than the recursive approach because it avoids creating multiple stack frames for function calls. 
-Instead, it uses a loop to iteratively calculate iteration(n) by updating three variables (first_num, second_num, and third_num) 
-to store the values of iteration(n-3), iteration(n-2), and iteration(n-1), respectively. 
-This method is faster and more memory-efficient than the recursive approach.
+This approach uses a loop to iteratively calculate the solution.
 
-A disadvantage of this approach is that we would not be able to access values before n-3
+Advantages:
+Efficiency: The iterative approach avoids creating multiple stack frames for recursive calls, 
+resulting in faster and more memory-efficient code.
+
+Disadvantages:
+Limited access to previous values: Since the iterative approach only uses a loop, 
+it can only access values up to n-3.
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+where n is the input value of the function
 */
 int iteration(int n) {
     int first_num = 0, second_num = 1, third_num = 2, result;
@@ -72,13 +87,21 @@ int iteration(int n) {
 }
 
 /*
-This method uses memoization to improve the efficiency of the recursive approach. 
-It stores the results of previous function calls in an array called memo, which is used to avoid redundant calculations. 
-When a value of F(n) is needed, the function first checks if it has already been calculated and stored in memo. 
-If so, it returns that value; if not, it calculates the value recursively and stores it in memo for later use. 
-This method is more memory-efficient than the basic recursive approach because it avoids redundant function calls.
+This method uses memoization to improve the efficiency of the recursive approach.
 
-However, it still incurs some overhead due to array access and checking.
+Advantages:
+1)Efficiency: Memoization stores previously calculated values in an array (memo) to avoid redundant calculations, 
+significantly improving performance.
+
+2)Memory efficiency: Memoization reduces the number of function calls and eliminates redundant computation, 
+making it more memory-efficient than the basic recursive approach.
+
+Disadvantages:
+Overhead: Memoization introduces some overhead due to array access and checking.
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+where n is the input value of the function
 */
 int memo_recursion(int n, int *memo){
     int result;

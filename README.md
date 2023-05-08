@@ -45,3 +45,7 @@ https://dev.to/gamegods3/how-to-install-gcc-in-windows-10-the-easier-way-422j
 ### For mac users
 
 https://osxdaily.com/2023/05/02/how-install-gcc-mac/
+
+### For Linux users
+
+https://linuxize.com/post/how-to-install-gcc-compiler-on-ubuntu-18-04/
