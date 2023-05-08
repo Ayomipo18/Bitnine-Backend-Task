@@ -4,7 +4,8 @@
 
 - If you don't have gcc installed, go to the installation instructions
 
-- If you have gcc installed
+- If you have gcc installed, follow the instructions on "How to run this code" section
+
 ### How to run this code
 
 - Clone this repo
