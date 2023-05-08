@@ -2,7 +2,7 @@
 
 - Ensure you have gcc installed on your system
 
-- If you don't have gcc installed, go to the installation instructions
+- If you don't have gcc installed, go to the Installation section and follow the instructions
 
 - If you have gcc installed, follow the instructions on "How to run this code" section
 
