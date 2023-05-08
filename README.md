@@ -1,11 +1,10 @@
 # Requirements
 
-Ensure you have gcc installed on your system
+- Ensure you have gcc installed on your system
 
-If you don't have gcc installed, go to the installation instructions
+- If you don't have gcc installed, go to the installation instructions
 
-If you have gcc installed
-
+- If you have gcc installed
 ### How to run this code
 
 - Clone this repo
