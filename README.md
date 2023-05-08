@@ -14,9 +14,9 @@
 
 - Go to the directory where the cloned repo is located
 
-- cd into the Bitnine folder
+- cd into the Bitnine-Backend-Task folder
 ```bash
-cd Bitnine
+cd Bitnine-Backend-Task
 ```
 
 - cd into which Question folder you want to run. For example, if you want to run Question 1, do
