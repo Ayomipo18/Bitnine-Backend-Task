@@ -4,15 +4,15 @@
 
 - If you don't have gcc installed, go to the Installation section and follow the instructions
 
-- If you have gcc installed, follow the instructions on "How to run this code" section
+- If you have gcc installed, follow the instructions under the "How to run this code" section
 
 ### How to run this code
 
-- Clone this repo
+- After unzipping the file
 
 - Open your terminal
 
-- Go to the directory where the cloned repo is located
+- Go to the directory where the Bitnine-Backend-Task Folder is located
 
 - cd into the Bitnine-Backend-Task folder
 ```bash
@@ -29,7 +29,7 @@ cd Question1
 gcc Question1.c -o Question1
 ```
 
-- You can then type ./Question1 in your terminal and see the code output. for QUestion 2 replace Question 1 with Question 2
+- You can then type ./Question1 in your terminal and see the code output. For Question 2 replace Question1 in your command with Question2
 ```bash
 ./Question1
 ```
